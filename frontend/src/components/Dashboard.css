@@ -1,0 +1,43 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard__header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.dashboard__roles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.module-card {
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.module-card:hover {
+  background-color: var(--color-primary);
+}
+
+.module-card__icon {
+  font-size: 2rem;
+  display: block;
+}
+
+.module-card__name {
+  margin-top: 0.5rem;
+}
